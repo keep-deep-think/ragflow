@@ -48,6 +48,7 @@ services:
     environment:
       - KVROCKS_HOST=kvrocks
       - KVROCKS_PORT=6379
+      - TOKENIZER_EMBEDDING_BATCH_SIZE=10
     networks:
       - ragflow
     restart: unless-stopped

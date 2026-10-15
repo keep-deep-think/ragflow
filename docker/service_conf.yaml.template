@@ -134,8 +134,10 @@ ingestor:
   # the whole process (shared by all ingestor workers). Override with the env var
   # RAGFLOW_INGESTOR_PAGE_CONCURRENCY, or the CLI flag --ingestor-page-concurrency
   # (highest precedence). Valid range [1, 16]. Default 2.
-  page_concurrency: 2
+  page_concurrency: 6
   compiler_pool_size: 0
+  inference_concurrency: 3
+  inference_cpu_cores: 0
 file_syncer:
   max_concurrent_syncs: 5
 user_default_llm:
